@@ -22,7 +22,7 @@
             </ul>
         </header>
         <div class="con">
-            <div class="sidenav sidemenu">
+            <div id="side-menu"class="sidenav sidemenu">
                 <!-- <div class="back"> -->
                     <a href="#" class="close-btn" onclick="closeslidemenu()">&times;</a>
                     <a href="#">Home</a>
@@ -49,11 +49,14 @@
         // document.querySelector('.main-content').classList.toggle('showtext');
         // });
         function openslidemenu(){
-            document.querySelector('.sidenav').classList.toggle('show');
+            document.getElementsByClassName('sidenav')[0].style.width = '190px';
+            // document.getElementById('side-menu').style.width = '190px';
+            // document.querySelector('.sidenav').classList.toggle('show');
         document.querySelector('.main-content').classList.toggle('showtext');
             }
             function closeslidemenu(){
-                document.querySelector('.sidenav').classList.toggle('show');
+                document.getElementsByClassName('sidenav')[0].style.width = '0px';
+                // document.querySelector('.sidenav').classList.toggle('show');
         document.querySelector('.main-content').classList.toggle('showtext');
             }
     </script>

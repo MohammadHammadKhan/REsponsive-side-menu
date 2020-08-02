@@ -22,6 +22,11 @@ body{
     color: #333;
     
 }
+.sidemenu-btn i:hover{
+    /* color: white;
+    background: #333; */
+    opacity: 0.4;
+}
 
 .top-navbar{
     list-style: none;
@@ -33,7 +38,17 @@ body{
     text-decoration: none;
     color: #333;
     margin-left: 30px;
+
 }
+.top-navbar li a:hover{
+/* color: white;
+background: #333; */
+padding-bottom: 0.3rem;
+/* border-radius: 15px; */
+border-bottom: 2px solid #333;
+}
+
+
 .con{
     display: flex;
     flex-direction: row;
@@ -46,14 +61,17 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width:190px;
+    width:0px;
     height: 100vh;
     margin-right: 20px;
     z-index: 2;
+    overflow-x:hidden;
+   
+
     /* display:none; */
    
     transition: all 1s;
-    transform: translateX(-190px);
+    /* transform: translateX(-190px); */
     /* visibility: hidden; */
     /* transform: translateY(-60px); */
     
@@ -68,6 +86,7 @@ body{
     color: white;
     text-decoration: none;
     padding: 0.6rem;
+    display:block;
     margin-left: 10px;
 }
 .sidemenu{
@@ -86,7 +105,8 @@ body{
     /* height: 100vh; */
     /* margin-right: 20px; */ 
     transition: all 1s;
-    transform: translateX(0px);
+    /* transform: translateX(0px); */
+    width: 190px;
     /* visibility: visible; */
 }
 .main-content{
