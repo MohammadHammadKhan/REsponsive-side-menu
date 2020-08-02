@@ -11,7 +11,7 @@
     <div class="container">
         <header class="main-header">
             <span class="sidemenu-btn">
-                <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                <a href="#" onclick="openslidemenu()"><i class="fas fa-bars fa-2x"></i></a>
             </span>
 
             <ul class="top-navbar">
@@ -24,7 +24,7 @@
         <div class="con">
             <div class="sidenav sidemenu">
                 <!-- <div class="back"> -->
-                    <a href="#" class="close-btn">&times;</a>
+                    <a href="#" class="close-btn" onclick="closeslidemenu()">&times;</a>
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>
@@ -37,18 +37,25 @@
         </div>
     </div>
     <script>
-        document.querySelector('.sidemenu-btn').addEventListener('click',()=>
-        {
+        // document.querySelector('.sidemenu-btn').addEventListener('click',()=>
+        // {
         
+        //     document.querySelector('.sidenav').classList.toggle('show');
+        //     document.querySelector('.main-content').classList.toggle('showtext');
+        // });
+        // document.querySelector('.close-btn').addEventListener('click',()=>
+        // {
+        // document.querySelector('.sidenav').classList.toggle('show');
+        // document.querySelector('.main-content').classList.toggle('showtext');
+        // });
+        function openslidemenu(){
             document.querySelector('.sidenav').classList.toggle('show');
-            document.querySelector('.main-content').classList.toggle('showtext');
-        });
-        document.querySelector('.close-btn').addEventListener('click',()=>
-        {
-        document.querySelector('.sidenav').classList.toggle('show');
         document.querySelector('.main-content').classList.toggle('showtext');
-        });
-
+            }
+            function closeslidemenu(){
+                document.querySelector('.sidenav').classList.toggle('show');
+        document.querySelector('.main-content').classList.toggle('showtext');
+            }
     </script>
 </body>
 </html>
